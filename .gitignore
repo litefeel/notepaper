@@ -1,0 +1,16 @@
+# Build and Release Folders
+bin-debug/
+bin-release/
+bin/
+
+# Project property files
+.actionScriptProperties
+.flexProperties
+.settings/
+.project
+.svn
+.flexLibProperties
+
+# FlashDevelop files
+obj/
+*.as3proj
