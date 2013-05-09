@@ -129,6 +129,7 @@
 	}
 	
 }
+import flash.display.NativeWindow;
 
 class ModalVo
 {
