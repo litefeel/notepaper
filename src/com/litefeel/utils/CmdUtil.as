@@ -10,16 +10,23 @@ package com.litefeel.utils
 	 */
 	public class CmdUtil 
 	{
-		// cmd.exe 文件，直接设置或者使用CmdUtil.setCmdFile方法
+		/**
+		 * cmd.exe文件地址
+		 * @see #setCmdFile()
+		 * @see #autoSetCmdFile()
+		 */
 		public static var cmdFile:File;
 		
-		/** 与cmdFile通信使用的编码，对于windows下的cmd.exe不必设置，默认是系统编码 */
+		/**
+		 * 与cmdFile通信使用的编码，对于windows下的cmd.exe不必设置，默认是系统编码
+		 */
 		public static var charset:String;
 		
 		/**
 		 * 设置cmd.exe
 		 * @param	filePath cmd.exe的文件路径
 		 * @return	是否设置文件正确
+		 * @see #cmdFile
 		 */
 		public static function setCmdFile(filePath:String):Boolean
 		{
@@ -30,11 +37,23 @@ package com.litefeel.utils
 		}
 		
 		/**
-		 * 执行一条命令
+		 * 设置window默认的cdm.exe路径 C:/Windows/system32/cmd.exe
+		 * @see #cmdFile
+		 * @see #setCmdFile()
+		 */
+		public static function autoSetCmdFile():void
+		{
+			setCmdFile("C:/Windows/system32/cmd.exe");
+		}
+		
+		/**
+		 * 执行一条命令，如果没有设置cmd.exe文件，则自动使用默认cmd.exe
 		 * @param	commandStr 一条命令
 		 */
 		public static function call(commandStr:String):void 
 		{
+			if (!cmdFile) autoSetCmdFile();
+			
 			var info:NativeProcessStartupInfo = new NativeProcessStartupInfo();
 			info.executable = cmdFile;
 			var process:NativeProcess = new NativeProcess();
