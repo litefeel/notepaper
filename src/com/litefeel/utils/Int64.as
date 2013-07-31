@@ -74,9 +74,10 @@ package com.litefeel.utils
 		 */
 		public function toNumber():Number
 		{
-			getTrueCode();
-			var result:Number = int(trueHigh & 0x7FFFFFFF) * MASK * 2 + trueLow;
-			return (trueHigh & MASK) != 0 ? -result : result;
+			return int(high) * MASK * 2 + low;
+			//getTrueCode();
+			//var result:Number = int(trueHigh & 0x7FFFFFFF) * MASK * 2 + trueLow;
+			//return (trueHigh & MASK) != 0 ? -result : result;
 		}
 		
 		/**
