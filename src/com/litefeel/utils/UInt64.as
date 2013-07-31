@@ -9,8 +9,8 @@ package
 	 */
 	public final class UInt64 
 	{
-		private var high:uint;
-		private var low:uint;
+		public var high:uint;
+		public var low:uint;
 		
 		public function UInt64(high:uint = 0, low:uint = 0) 
 		{
@@ -46,14 +46,19 @@ package
 		
 		public function toString():String
 		{
-			return null;
+			return toNumber() + "";
 		}
 		
 		public function toHex():String
 		{
 			var s:String = low.toString(16);
-			if (s.length < 8) s = StringUtil.memset("0", 8 - str.length) + s;
-			return high.toString(16) + s;
+			if (high > 0)
+			{
+				if (s.length < 8)
+					s = StringUtil.memset("0", 8 - str.length) + s;
+				s = high.toString(16) +s;
+			}
+			return s;
 		}
 		
 		/**

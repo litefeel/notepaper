@@ -12,8 +12,8 @@ package com.litefeel.utils
 		private static const MASK:uint = 1 << 31;
 		
 		// 补码
-		private var high:uint;
-		private var low:uint;
+		public var high:uint;
+		public var low:uint;
 		// 源码
 		private var trueHigh:uint;
 		private var trueLow:uint;
@@ -53,15 +53,18 @@ package com.litefeel.utils
 		
 		public function toString():String
 		{
-			return null;
+			return toNumber() + "";
 		}
 		
 		public function toHex():String
 		{
 			getTrueCode();
 			var s:String = trueLow.toString(16);
-			if (s.length < 8) s = StringUtil.memset("0", 8 - s.length) + s;
-			s = (trueHigh & 0x7FFFFFFF).toString(16) + s;
+			if (trueHigh & 0x7FFFFFFF)
+			{
+				if(s.length < 8) s = StringUtil.memset("0", 8 - s.length) + s;
+				s = (trueHigh & 0x7FFFFFFF).toString(16) + s;
+			}
 			return (trueHigh & MASK) != 0 ? "-" + s : s;
 		}
 		
