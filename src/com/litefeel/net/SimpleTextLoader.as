@@ -18,7 +18,7 @@
 	 * 
 	 * @example 
 	 * 	<code>
-	 * 	import Antplay.engine.core.loader.SimpleTextLoader;
+	 * 	import com.litefeel.net.SimpleTextLoader;
 	 * 	
 	 * 	var simpleTextLoader:SimpleTextLoader(filePath, completeHandler, this);
 	 * 	function completeHandler(loader:SimpleTextLoader):void
