@@ -1,0 +1,166 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Notepaper\n"
+"POT-Creation-Date: 2013-03-31 01:25+0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: lite3 <lite3@qq.com>\n"
+"Language-Team: lite3 <lite3@qq.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: getText;_;__\n"
+"X-Poedit-Basepath: E:\\AS3Project\\Notepaper\\src\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# TrayIcon.as
+# NotepaperUI.as
+#: com/litefeel/notepaper/TrayIcon.as:77
+msgid "New Notepaper"
+msgstr "新建便签"
+
+#: com/litefeel/notepaper/TrayIcon.as:85
+msgid "Show Groups"
+msgstr "显示组"
+
+#: com/litefeel/notepaper/TrayIcon.as:89
+msgid "Hide Groups"
+msgstr "隐藏组"
+
+# TrayIcon.as
+#: com/litefeel/notepaper/TrayIcon.as:104
+msgid "Start At Login"
+msgstr "开机自启动"
+
+#: com/litefeel/notepaper/TrayIcon.as:120
+msgid "About..."
+msgstr "关于..."
+
+#: com/litefeel/notepaper/TrayIcon.as:128
+msgid "Exit"
+msgstr "退出"
+
+#: com/litefeel/notepaper/TrayIcon.as:137
+msgid "Manager..."
+msgstr "管理..."
+
+# TrayIcon.as
+#: com/litefeel/notepaper/TrayIcon.as:151
+msgid "Language"
+msgstr "语言"
+
+#: com/litefeel/notepaper/TrayIcon.as:211
+msgid "Show All"
+msgstr "显示所有"
+
+# TrayIcon.as
+#: com/litefeel/notepaper/TrayIcon.as:211
+msgid "Hide All"
+msgstr "隐藏所有"
+
+# NotepaperManager.as
+#: com/litefeel/notepaper/managers/NotepaperWindowManager.as:147
+msgid "Are you sure you want to delete the notepaper \"{1}\" ?"
+msgstr "你确定想要删除便签 “{1}” 吗？"
+
+#: com/litefeel/notepaper/managers/NotepaperWindowManager.as:148
+msgid "Confirm Notepaper Delete"
+msgstr "验证便签删除"
+
+#: com/litefeel/notepaper/managers/NotepaperWindowManager.as:149
+#: com/litefeel/notepaper/view/ManagerWindow.as:172
+#: com/litefeel/notepaper/view/NewGroupWindow.as:124
+msgid "OK"
+msgstr "确定"
+
+#: com/litefeel/notepaper/managers/NotepaperWindowManager.as:150
+#: com/litefeel/notepaper/view/ManagerWindow.as:172
+#: com/litefeel/notepaper/view/NewGroupWindow.as:130
+msgid "Cancel"
+msgstr "取消"
+
+# TrayIcon.as
+# NotepaperUI.as
+#: com/litefeel/notepaper/view/AboutWindow.as:52
+msgid "About Notepaper"
+msgstr "关于 Notepaper"
+
+#: com/litefeel/notepaper/view/ManagerWindow.as:53
+msgid "Manager Panel"
+msgstr "管理面板"
+
+#: com/litefeel/notepaper/view/ManagerWindow.as:76
+#: com/litefeel/notepaper/view/NewGroupWindow.as:47
+msgid "New Group"
+msgstr "新建组"
+
+#: com/litefeel/notepaper/view/ManagerWindow.as:77
+msgid "Modify Group"
+msgstr "修改组"
+
+# NotepaperUI.as
+#: com/litefeel/notepaper/view/ManagerWindow.as:78
+msgid "Delete Group"
+msgstr "删除组"
+
+# NotepaperManager.as
+#: com/litefeel/notepaper/view/ManagerWindow.as:171
+msgid "Are you sure you want to delete the group \"{1}\" and all notes?"
+msgstr "你确定想要删除组 “{1}” 及该组内的所有便签吗？"
+
+#: com/litefeel/notepaper/view/ManagerWindow.as:172
+msgid "Confirm Group Delete"
+msgstr "验证组删除"
+
+#: com/litefeel/notepaper/view/ManagerWindow.as:222
+msgid "All Groups"
+msgstr "所有组"
+
+#: com/litefeel/notepaper/view/ManagerWindow.as:252
+msgid "Name"
+msgstr "名字"
+
+#: com/litefeel/notepaper/view/ManagerWindow.as:252
+msgid "Created Date"
+msgstr "创建日期"
+
+#: com/litefeel/notepaper/view/NewGroupWindow.as:105
+msgid "Group Name"
+msgstr "组名"
+
+#: com/litefeel/notepaper/view/NotepaperUI.as:388
+msgid "New"
+msgstr "新建"
+
+#: com/litefeel/notepaper/view/NotepaperUI.as:391
+msgid "Delete..."
+msgstr "删除..."
+
+# TrayIcon.as
+#: com/litefeel/notepaper/view/NotepaperUI.as:394
+msgid "Hide"
+msgstr "隐藏"
+
+#: com/litefeel/notepaper/view/NotepaperUI.as:397
+msgid "Show Title"
+msgstr "显示标题"
+
+#: com/litefeel/notepaper/view/NotepaperUI.as:400
+msgid "OnTop"
+msgstr "前端显示"
+
+# NotepaperUI.as
+#: com/litefeel/notepaper/view/NotepaperUI.as:403
+msgid "Edit"
+msgstr "编辑"
+
+#: com/litefeel/notepaper/view/NotepaperUI.as:406
+#: com/litefeel/notepaper/view/NotepaperUI.as:409
+msgid "Finish Editing"
+msgstr "结束编辑"
+
+#: com/litefeel/notepaper/view/NotepaperUI.as:413
+msgid "Groups"
+msgstr "组"
