@@ -67,7 +67,7 @@ package com.litefeel.net
 		private function onComplte(e:Event):void 
 		{
 			loading = false;
-			if (_callback) _callback(true, this);
+			if (_callback != null) _callback(true, this);
 		}
 		
 		private function onIOError(e:IOErrorEvent):void 
@@ -80,7 +80,7 @@ package com.litefeel.net
 				return;
 			}
 			trace("can load load", url);
-			if (_callback) _callback(false, this);
+			if (_callback != null) _callback(false, this);
 		}
 		
 	}
