@@ -203,7 +203,10 @@ package com.litefeel.notepaper.managers
 		
 		public function init():void
 		{
-			var file:File = File.documentsDirectory.resolvePath("Notepaper/config.db");
+			var dir:File = File.documentsDirectory.resolvePath("Notepaper");
+			if (!dir.exists) dir.createDirectory();
+			var file:File = dir.resolvePath("config.db");
+			
 			file = new File(file.nativePath);
 			trace(file.nativePath);
 			conn = new SQLConnection();

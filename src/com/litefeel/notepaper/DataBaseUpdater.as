@@ -27,6 +27,7 @@ package com.litefeel.notepaper
 				conn.loadSchema(SQLTableSchema);
 			}catch (err:SQLError)
 			{
+				trace(err);
 				// 当新创建的一个数据库文件。会有异常。
 				//[Fault] exception, information=SQLError: 'Error #3115: SQL Error.', details:'No schema objects with type 'table' in database 'main' were found.', operation:'schema', detailID:'1009'
 				return;
