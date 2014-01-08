@@ -30,26 +30,30 @@ package com.litefeel.utils
 		}
 		
 		/**
-		 * 获取可视尺寸，类似于DisplayObject.getBounds()，如果target或包含的显示对象使用了遮罩，请用getViewBoundsForMasker方法。
+		 * 获取可视尺寸，类似于DisplayObject.getBounds()。
+		 * 如果target或其包含的显示对象使用了遮罩，请用getViewBoundsForMasker方法。
 		 * @param	target
 		 * @param	targetCoordinateSpace target所在的容器, null表示target自身。
 		 * @return	Rectange
 		 * @see	getViewBoundsForMasker()
 		 */
-		public static function getViewBounds(target:DisplayObject, targetCoordinateSpace:DisplayObjectContainer) 
+		public static function getViewBounds(target:DisplayObject,
+									coordinateSpace:DisplayObjectContainer):Rectangle 
 		{
 			renderForce();
-			return target.getBounds(targetCoordinateSpace);
+			return target.getBounds(coordinateSpace);
 		}
 		
 		/**
-		 * 获取可视尺寸，类似于DisplayObject.getBounds()，如果target及其内容没有遮罩，请使用getViewBounds()，效率更高
+		 * 获取可视尺寸，类似于DisplayObject.getBounds()。
+		 * 如果target及其内容没有遮罩，请使用getViewBounds()，效率更高
 		 * @param	target
 		 * @param	targetCoordinateSpace target所在的容器, null表示target自身。
 		 * @return	Rectange
 		 * @see	getViewBounds()
 		 */
-		public static function getViewBoundsForMasker(target:DisplayObject, targetCoordinateSpace:DisplayObjectContainer) 
+		public static function getViewBoundsForMasker(target:DisplayObject,
+									coordinateSpace:DisplayObjectContainer):Rectangle
 		{
 			var bound:Rectangle = target.getBounds(null);
 			var bitmapdata:BitmapData = new BitmapData(bound.width, bound.height, true, 0);
@@ -58,7 +62,7 @@ package com.litefeel.utils
 			bitmapdata.dispose();
 			rect.x += bound.x;
 			rect.y += bound.y;
-			if (!targetCoordinateSpace || target == targetCoordinateSpace)
+			if (!coordinateSpace || target == coordinateSpace)
 			{
 				return rect;
 			}
