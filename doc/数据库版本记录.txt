@@ -1,0 +1,38 @@
+﻿这里记录了数据库的表结构,以便以后升级时对照使用
+
+1.0 // Notepaper1.0
+[config] 表
+id(自增加)		Integer				PrimaryKey
+lang			VarChar(6)						NULL
+startAtLogin	TinyInt(1)	NotNull				0		//1:true 0:false
+dbVer			VarChar(11)						NULL
+codeVer			VarChar(11)						NULL	// 废弃掉,没用
+sync			TinyInt(1)	NotNull				0		// 废弃掉
+ver				Integer							NULL	// 废弃掉
+
+[group] 表
+id(自增加)		Integer				PrimaryKey	NULL	// 1为默认组,不能删除
+gid				Integer		NotNull				0		// 废弃掉
+name			VarChar(40)						Null
+sync			TinyInt(1)	NotNull				Null	// 废弃掉
+ver				Integer									// 废弃掉
+
+[note] 表
+id				Integer				PrimaryKey
+nid				Integer		NotNull						// 废弃掉
+gid				Integer									// 对应group.id
+title			VarChar(300)							// 标题
+content			Text
+unroll			TinyInt(1)	NotNull						// 是否显示标题1:true 0:false
+onTop			TinyInt(1)	NotNull						// 是否在其他窗口前面显示1:true 0:false
+visible			TinyInt(1)	NotNull						// 1:true 0:false 是否隐藏
+x				Integer
+y				Integer
+w				Integer
+h				Integer
+date			DateTime	NotNull						// 创建时间
+dateGmt			DateTime	NotNull						// 创建时间
+dateModified	DateTime	NotNull						// 修改时间
+dateModifiedGmt	DateTime	NotNull						// 修改时间
+sync			TinyInt(1)	NotNull						// 废弃掉
+ver				Integer									// 废弃掉
