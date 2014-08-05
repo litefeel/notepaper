@@ -12,7 +12,7 @@
     <movie minorVersion="9" />
     <movie platform="AIR" />
     <movie background="#FFFFFF" />
-    <movie preferredSDK="AIR 3.9.0;3.9.0;" />
+    <movie preferredSDK="AIR 14.0.0;14.0.0;" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
